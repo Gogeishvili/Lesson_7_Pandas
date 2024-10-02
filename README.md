@@ -29,4 +29,3 @@ source env/bin/activate  # On Windows use `env\Scripts\activate`
 # Install required packages
 pip install pandas matplotlib openpyxl
 
-## Usage
