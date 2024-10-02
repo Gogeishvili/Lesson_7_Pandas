@@ -28,17 +28,27 @@ source env/bin/activate  # On Windows use `env\Scripts\activate`
 
 # Install required packages
 pip install pandas matplotlib openpyxl
-Usage
+
+## Create a virtual environment (optional)
+```bash
+python -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+```
+# Install required packages
+```bash
+pip install pandas matplotlib openpyxl
+```
+## Usage
 Prepare the Data: Place the student_scores_random_names.csv file in the project directory.
 Run the Analysis: Execute the following command in your terminal to perform the analysis and generate visualizations:
-bash
-Copy code
+
+```bash
 python main.py
+```
 Project Structure
 Here's a quick overview of the project directory structure:
 
-bash
-Copy code
+```bash
 project-directory/
 │
 ├── main.py                                # Main script to execute the analysis
@@ -46,7 +56,9 @@ project-directory/
 ├── average_scores_by_semester.xlsx        # Output Excel file for average scores
 ├── average_scores_by_semester_bar_chart.png # Bar chart output
 └── average_overall_score_by_semester_line_graph.png # Line graph output
-Class Structure
-StudentDataHandler: Responsible for loading and saving data.
-StudentDataAnalyzer: Contains methods for analyzing student data.
-StudentDataVisualizer: Handles all plotting and visual representation of the data.
+```
+## Class Structure
+
+- **`StudentDataHandler`**: Responsible for loading and saving data.
+- **`StudentDataAnalyzer`**: Contains methods for analyzing student data.
+- **`StudentDataVisualizer`**: Handles all plotting and visual representation of the data.
